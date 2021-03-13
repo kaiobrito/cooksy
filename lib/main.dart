@@ -1,7 +1,7 @@
+import 'package:cooksy/routes/mainRouter.dart';
 import 'package:cooksy/widgets/app-bar.dart';
 import 'package:flutter/material.dart';
 import 'constants/theme.dart';
-import 'screens/intro.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,10 +17,11 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: CookskyAppBar("Cooksy"),
         body: Container(
-        color: theme.backgroundColor,
-        height: double.infinity,
-        width: double.infinity,
-        child: IntroScreen()),
+          color: theme.backgroundColor,
+          height: double.infinity,
+          width: double.infinity,
+          child: MainRouter()
+        ),
       )
     );
   }

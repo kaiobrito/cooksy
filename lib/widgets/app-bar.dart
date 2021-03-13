@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-final double appBarHeight = 110;
+final double appBarHeight = 80;
 
 class CookskyAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -12,7 +12,7 @@ class CookskyAppBar extends StatelessWidget implements PreferredSizeWidget {
     return Container(
       color: Theme.of(context).backgroundColor,
       height: appBarHeight,
-      padding: EdgeInsets.only(left: 16, right: 16, top: 50, bottom: 35),
+      padding: EdgeInsets.only(left: 16, right: 16, top: 50),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,

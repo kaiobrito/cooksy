@@ -2,15 +2,12 @@ import 'package:cooksy/components/cardSection.dart';
 import 'package:cooksy/components/recipeCard.dart';
 import 'package:cooksy/components/section.dart';
 import 'package:cooksy/screens/home/components/headerCard.dart';
-import 'package:cooksy/widgets/app-bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: CookskyAppBar("Cooksy"),
-      body: Container(
+    return Container(
         color: Theme.of(context).backgroundColor,
         padding: EdgeInsets.all(24),
         child: SingleChildScrollView(
@@ -62,7 +59,6 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-      ),
     );
   }
 }

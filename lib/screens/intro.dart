@@ -2,32 +2,45 @@ import 'package:cooksy/screens/home/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-final introImage = AssetImage("./assets/images/intro.png",);
-
+final introImage = AssetImage(
+  "./assets/images/intro.png",
+);
 
 class IntroScreen extends StatelessWidget {
+  final Function() onPress;
+
+  IntroScreen(this.onPress);
+
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Container(
         padding: EdgeInsets.all(30),
         width: double.infinity,
-        child: Column( 
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Spacer(),
             Column(
               children: [
-                Image(image: introImage,),
-                SizedBox(height: 60,),
+                Image(
+                  image: introImage,
+                ),
+                SizedBox(
+                  height: 60,
+                ),
                 Column(
                   children: [
-                    Text("All the recipes on your fingertips", 
+                    Text(
+                      "All the recipes on your fingertips",
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.headline4,
                     ),
-                    SizedBox(height: 10,),
-                    Text("Cooking on Thermomix made easy",
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "Cooking on Thermomix made easy",
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.subtitle1,
                     ),
@@ -37,16 +50,11 @@ class IntroScreen extends StatelessWidget {
             ),
             Spacer(),
             TextButton(
-              onPressed: () => {
-                Navigator.push(context, CupertinoPageRoute(
-                    builder: (context) => HomeScreen(),
-                    fullscreenDialog: true,
-                  )
-                )
-              }, 
+              onPressed: onPress,
               child: Text("Let's start"),
             )
-        ],),
+          ],
+        ),
       ),
     );
   }

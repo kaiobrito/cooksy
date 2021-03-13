@@ -52,6 +52,10 @@ final theme = ThemeData(
         fontFamily: "Nunito",
         color: black.withOpacity(0.45),
         fontWeight: FontWeight.w300,
+      ),
+      caption: TextStyle(
+        fontFamily: "Nunito",
+        fontWeight: FontWeight.w400,
       )
     ).apply(
       bodyColor: black,
