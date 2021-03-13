@@ -1,6 +1,7 @@
 import 'package:cooksy/components/cardSection.dart';
 import 'package:cooksy/components/recipeCard.dart';
 import 'package:cooksy/components/section.dart';
+import 'package:cooksy/constants/recipes.dart';
 import 'package:cooksy/screens/home/components/headerCard.dart';
 import 'package:flutter/material.dart';
 
@@ -51,9 +52,9 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   SectionWidget("René Redzepi", "recommends you"),
                   SizedBox(height: 16,),
-                  RecipeCard(),
-                  RecipeCard(),
-                  RecipeCard(),
+                  RecipeCard(
+                    Recipe("Vegan Thai Curry Soup", "Spice lovers will slurp up this soup in seconds. Featuring chili powder, smoked paprika, and cayenne pepper, every bowl brings the heat.", timeInMinutes: 50, serving: 4)
+                  ),
                 ],
               ),
             ],

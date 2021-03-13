@@ -38,8 +38,9 @@ class BottomNavBarItem extends StatelessWidget {
 
 class BottomNavBarWidget extends StatelessWidget {
   final int _selectedIndex;
+  final Function(int index) _onTap;
 
-  BottomNavBarWidget(this._selectedIndex);
+  BottomNavBarWidget(this._selectedIndex, this._onTap);
 
   @override
   Widget build(BuildContext context) {
@@ -59,8 +60,22 @@ class BottomNavBarWidget extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            BottomNavBarItem(icon: Icons.lightbulb, label: "Inspirations", selected: _selectedIndex == 0,),
-            BottomNavBarItem(icon: Icons.home, label: "Recipes", selected: _selectedIndex == 1,),
+            GestureDetector(
+              onTap: () => this._onTap(0),
+              child: BottomNavBarItem(
+                icon: Icons.lightbulb,
+                label: "Inspirations",
+                selected: _selectedIndex == 0,
+              ),
+            ),
+            GestureDetector(
+              onTap: () => this._onTap(1),
+              child: BottomNavBarItem(
+                icon: Icons.home,
+                label: "Recipes",
+                selected: _selectedIndex == 1,
+              ),
+            )
           ],
         ),
       ),

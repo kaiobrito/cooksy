@@ -1,4 +1,4 @@
-
+import 'package:cooksy/constants/recipes.dart';
 import 'package:flutter/material.dart';
 
 final recipeImage = AssetImage(
@@ -6,25 +6,32 @@ final recipeImage = AssetImage(
 );
 
 class RecipeCard extends StatelessWidget {
+  final Recipe _recipe;
+
+  RecipeCard(this._recipe);
+
   @override
   Widget build(BuildContext context) {
-    
     return Container(
         child: Card(
-          child: Container(
-            margin: EdgeInsets.all(24),
-            child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Image(image: recipeImage,),
-                  SizedBox(height: 16,),
-                  Text("Vegan Thai Curry Soup",
-                    style: Theme.of(context).textTheme.headline6
-                  ),
-                  SizedBox(height: 16,),
-                  Text("Spice lovers will slurp up this soup in seconds. Featuring chili powder, smoked paprika, and cayenne pepper, every bowl brings the heat."),
-                ]),
+      child: Container(
+        margin: EdgeInsets.all(24),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Image(
+            image: recipeImage,
           ),
-        ));
+          SizedBox(
+            height: 16,
+          ),
+          Text(_recipe.title,
+              style: Theme.of(context).textTheme.headline6),
+          SizedBox(
+            height: 16,
+          ),
+          Text(
+              _recipe.description),
+        ]),
+      ),
+    ));
   }
 }

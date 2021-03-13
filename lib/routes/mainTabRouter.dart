@@ -1,5 +1,6 @@
 import 'package:cooksy/components/bottomNavBar.dart';
 import 'package:cooksy/screens/home/home.dart';
+import 'package:cooksy/screens/recipes/myRecipes.dart';
 import 'package:flutter/material.dart';
 
 class MainTabRouter extends StatefulWidget {
@@ -11,9 +12,13 @@ class _MainTabRouterState extends State<MainTabRouter> {
   int _selectedIndex = 0;
 
   get tabs {
-    return [
-      HomeScreen(),
-    ];
+    return [HomeScreen(), MyRecipes()];
+  }
+
+  onSelectIndex(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
   }
 
   @override
@@ -21,7 +26,9 @@ class _MainTabRouterState extends State<MainTabRouter> {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        bottomNavigationBar: BottomNavBarWidget(_selectedIndex),
+        bottomNavigationBar: BottomNavBarWidget(
+          _selectedIndex, onSelectIndex
+        ),
         body: Center(child: tabs[_selectedIndex]),
       ),
     );
