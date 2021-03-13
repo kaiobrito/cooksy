@@ -19,7 +19,7 @@ class SectionWidget extends StatelessWidget {
           textAlign: TextAlign.left,
           style: TextStyle(
               fontWeight: FontWeight.w200,
-              fontSize: 34,
+              fontSize: 32,
               fontFamily: "WorkSans"),
         ),
       ],

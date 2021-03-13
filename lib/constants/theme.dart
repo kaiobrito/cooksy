@@ -25,12 +25,18 @@ final theme = ThemeData(
       headline4: TextStyle(
         fontFamily: "WorkSans",
         color: black,
+        fontSize: 32,
         fontWeight: FontWeight.w600,
       ),
       headline5: TextStyle(
         fontFamily: "WorkSans",
         color: black,
         fontWeight: FontWeight.w600,
+      ),
+      headline6: TextStyle(
+        fontFamily: "WorkSans",
+        color: black,
+        fontWeight: FontWeight.w500,
       ),
       subtitle1: TextStyle(
         fontFamily: "Nunito",
