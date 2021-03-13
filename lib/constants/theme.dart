@@ -4,13 +4,17 @@ final black = Color(0xFF1C0F13);
 
 final theme = ThemeData(
     backgroundColor: Color(0xFFF5F3F1),
-    elevatedButtonTheme: ElevatedButtonThemeData(
+    textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
-        elevation: MaterialStateProperty.all(0),
-        shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0))),
         minimumSize: MaterialStateProperty.all(Size.fromHeight(50)),
-        backgroundColor: MaterialStateProperty.all(black),
+        shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0))),
+        backgroundColor: MaterialStateProperty.all(Colors.black),
+        foregroundColor: MaterialStateProperty.all(Colors.white),
       )
+    ),
+    cardTheme: CardTheme(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+      elevation: 0.0,
     ),
     textTheme: TextTheme(
       button: TextStyle(
@@ -33,6 +37,16 @@ final theme = ThemeData(
         color: black.withOpacity(0.9),
         fontWeight: FontWeight.w400,
       ),
+      subtitle2: TextStyle(
+        fontFamily: "WorkSans",
+        color: black,
+        fontWeight: FontWeight.w500,
+      ),
+      bodyText2: TextStyle(
+        fontFamily: "Nunito",
+        color: black.withOpacity(0.45),
+        fontWeight: FontWeight.w300,
+      )
     ).apply(
       bodyColor: black,
       displayColor: black,

@@ -1,3 +1,5 @@
+import 'package:cooksy/screens/home/home.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 final introImage = AssetImage("./assets/images/intro.png",);
@@ -34,8 +36,14 @@ class IntroScreen extends StatelessWidget {
               ],
             ),
             Spacer(),
-            ElevatedButton(
-              onPressed: () => {}, 
+            TextButton(
+              onPressed: () => {
+                Navigator.push(context, CupertinoPageRoute(
+                    builder: (context) => HomeScreen(),
+                    fullscreenDialog: true,
+                  )
+                )
+              }, 
               child: Text("Let's start"),
             )
         ],),
