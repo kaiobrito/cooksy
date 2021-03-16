@@ -1,4 +1,4 @@
-import 'package:cooksy/components/recipeDetails.dart';
+import 'package:cooksy/widgets/recipeDetails.dart';
 import 'package:cooksy/constants/recipes.dart';
 import 'package:flutter/material.dart';
 

@@ -1,6 +1,6 @@
-import 'package:cooksy/components/cardSection.dart';
-import 'package:cooksy/components/recipeCard.dart';
-import 'package:cooksy/components/section.dart';
+import 'package:cooksy/widgets/cardSection.dart';
+import 'package:cooksy/widgets/recipeCard.dart';
+import 'package:cooksy/widgets/section.dart';
 import 'package:cooksy/constants/recipes.dart';
 import 'package:cooksy/screens/home/components/headerCard.dart';
 import 'package:flutter/material.dart';

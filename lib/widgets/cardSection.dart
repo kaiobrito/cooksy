@@ -1,4 +1,4 @@
-import 'package:cooksy/components/section.dart';
+import 'package:cooksy/widgets/section.dart';
 import 'package:flutter/material.dart';
 
 class CardSection extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:cooksy/components/bottomNavBar.dart';
+import 'package:cooksy/widgets/bottomNavBar.dart';
 import 'package:cooksy/screens/home/home.dart';
 import 'package:cooksy/screens/recipes/myRecipes.dart';
 import 'package:flutter/material.dart';
