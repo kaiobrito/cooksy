@@ -60,21 +60,25 @@ class BottomNavBarWidget extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            GestureDetector(
-              onTap: () => this._onTap(0),
-              child: BottomNavBarItem(
-                icon: Icons.lightbulb,
-                label: "Inspirations",
-                selected: _selectedIndex == 0,
+            Expanded(child: 
+              GestureDetector(
+                onTap: () => this._onTap(0),
+                child: BottomNavBarItem(
+                  icon: Icons.lightbulb,
+                  label: "Inspirations",
+                  selected: _selectedIndex == 0,
+                ),
               ),
             ),
-            GestureDetector(
-              onTap: () => this._onTap(1),
-              child: BottomNavBarItem(
-                icon: Icons.home,
-                label: "Recipes",
-                selected: _selectedIndex == 1,
-              ),
+            Expanded(child: 
+              GestureDetector(
+                onTap: () => this._onTap(1),
+                child: BottomNavBarItem(
+                  icon: Icons.home,
+                  label: "Recipes",
+                  selected: _selectedIndex == 1,
+                ),
+              )
             )
           ],
         ),
