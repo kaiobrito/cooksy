@@ -1,4 +1,3 @@
-import 'package:cooksy/constants/recipes.dart';
 import 'package:flutter/material.dart';
 
 class RecipeDetails extends StatelessWidget {
@@ -10,11 +9,25 @@ class RecipeDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(child: Text("$_minutes min", style: Theme.of(context).textTheme.bodyText2)),
+        Expanded(child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Icon(Icons.timer, size: 14, ),
+            SizedBox(width: 5),
+            Text("$_minutes min", style: Theme.of(context).textTheme.bodyText2),
+          ],
+        )),
         Expanded(
-          child: Text(
-            "$_serving ppl",
-            style: Theme.of(context).textTheme.bodyText2,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Icon(Icons.people_alt_outlined, size: 14, ),
+              SizedBox(width: 5),
+              Text(
+                "$_serving ppl",
+                style: Theme.of(context).textTheme.bodyText2,
+              ),
+            ],
           ),
         )
       ],
