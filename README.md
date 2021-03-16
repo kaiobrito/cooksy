@@ -1,6 +1,6 @@
 # cooksy
 
-A new Flutter project.
+This is my first project with Flutter, suggestions are welcome. The layout is based on the [Cooksy project](https://www.figmaresources.com/resources/figma-free-cooking-mobile-app) from Marcin Janas!.
 
 ## Getting Started
 
