@@ -10,7 +10,7 @@ class MyRecipes extends StatelessWidget {
       child: SingleChildScrollView(
         child: 
           Padding(
-            padding: EdgeInsets.all(24),
+            padding: EdgeInsets.all(16),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
