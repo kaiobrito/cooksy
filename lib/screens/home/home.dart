@@ -52,14 +52,14 @@ class HomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     SectionWidget("René Redzepi", "recommends you"),
-                    SizedBox(height: 16,),
-                    RecipeCard(
-                      Recipe("Vegan Thai Curry Soup", "Spice lovers will slurp up this soup in seconds. Featuring chili powder, smoked paprika, and cayenne pepper, every bowl brings the heat.", timeInMinutes: 50, serving: 4)
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16.0),
+                      child: RecipeCard(
+                        Recipe("Vegan Thai Curry Soup", "Spice lovers will slurp up this soup in seconds. Featuring chili powder, smoked paprika, and cayenne pepper, every bowl brings the heat.", timeInMinutes: 50, serving: 4)
+                      ),
                     ),
                   ],
                 ),
-
-                SizedBox(height: 16,),
                 OutlinedButton(onPressed: () { }, child: Text("Browse more recipes"),)
               ],
           ),

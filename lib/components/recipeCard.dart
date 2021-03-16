@@ -1,3 +1,4 @@
+import 'package:cooksy/components/recipeDetails.dart';
 import 'package:cooksy/constants/recipes.dart';
 import 'package:flutter/material.dart';
 
@@ -20,16 +21,17 @@ class RecipeCard extends StatelessWidget {
               Image(
                 image: recipeImage,
               ),
-              SizedBox(
-                height: 16,
-              ),
-              Text(_recipe.title,
-                  style: Theme.of(context).textTheme.headline6),
-              SizedBox(
-                height: 16,
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                child: Text(_recipe.title,
+                    style: Theme.of(context).textTheme.headline6),
               ),
               Text(
                   _recipe.description),
+              Padding(
+                padding: const EdgeInsets.only(top: 30.0),
+                child: RecipeDetails(_recipe.timeInMinutes, _recipe.serving),
+              ),
             ]),
           ),
     ));

@@ -1,4 +1,5 @@
 import 'package:cooksy/components/cardSection.dart';
+import 'package:cooksy/components/recipeDetails.dart';
 import 'package:flutter/material.dart';
 
 final recipeImage = AssetImage(
@@ -40,16 +41,7 @@ class HeaderCard extends StatelessWidget {
               style: Theme.of(context).textTheme.subtitle2,
             ),
             SizedBox(height: 5),
-            Row(
-              children: [
-                Text("50 min",
-                    style: Theme.of(context).textTheme.bodyText2),
-                Text(
-                  "4 ppl",
-                  style: Theme.of(context).textTheme.bodyText2,
-                )
-              ],
-            ),
+            RecipeDetails(50, 4),
             SizedBox(
               height: 16,
             ),
