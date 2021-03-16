@@ -1,4 +1,4 @@
-import 'package:cooksy/routes/mainTabRouter.dart';
+import 'package:cooksy/routes/main_tab_router.dart';
 import 'package:cooksy/screens/intro.dart';
 import 'package:flutter/material.dart';
 

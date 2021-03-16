@@ -1,6 +1,6 @@
-import 'package:cooksy/widgets/bottomNavBar.dart';
+import 'package:cooksy/widgets/bottom_nav_bar.dart';
 import 'package:cooksy/screens/home/home.dart';
-import 'package:cooksy/screens/recipes/myRecipes.dart';
+import 'package:cooksy/screens/recipes/my_recipes.dart';
 import 'package:flutter/material.dart';
 
 class MainTabRouter extends StatefulWidget {

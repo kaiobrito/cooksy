@@ -1,5 +1,5 @@
-import 'package:cooksy/routes/mainRouter.dart';
-import 'package:cooksy/widgets/app-bar.dart';
+import 'package:cooksy/routes/main_router.dart';
+import 'package:cooksy/widgets/app_bar.dart';
 import 'package:flutter/material.dart';
 import 'constants/theme.dart';
 

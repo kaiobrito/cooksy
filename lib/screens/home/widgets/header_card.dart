@@ -1,5 +1,5 @@
-import 'package:cooksy/widgets/cardSection.dart';
-import 'package:cooksy/widgets/recipeDetails.dart';
+import 'package:cooksy/widgets/card_section.dart';
+import 'package:cooksy/widgets/recipe_details.dart';
 import 'package:flutter/material.dart';
 
 final recipeImage = AssetImage(
