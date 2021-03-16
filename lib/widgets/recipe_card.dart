@@ -16,7 +16,7 @@ class RecipeCard extends StatelessWidget {
     return Container(
         child: Card(
           child: Container(
-            margin: EdgeInsets.all(24),
+            margin: EdgeInsets.all(16),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Image(
                 image: recipeImage,
