@@ -57,6 +57,9 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
+
+              SizedBox(height: 16,),
+              OutlinedButton(onPressed: () { }, child: Text("Browse more recipes"),)
             ],
           ),
         ),

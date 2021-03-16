@@ -12,6 +12,13 @@ final theme = ThemeData(
         foregroundColor: MaterialStateProperty.all(Colors.white),
       )
     ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        primary: black,
+        side: BorderSide(width: 1.4),
+        minimumSize: Size.fromHeight(50)
+      )
+    ),
     cardTheme: CardTheme(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
       elevation: 0.0,
