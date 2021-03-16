@@ -14,24 +14,24 @@ class RecipeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         child: Card(
-      child: Container(
-        margin: EdgeInsets.all(24),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Image(
-            image: recipeImage,
+          child: Container(
+            margin: EdgeInsets.all(24),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Image(
+                image: recipeImage,
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Text(_recipe.title,
+                  style: Theme.of(context).textTheme.headline6),
+              SizedBox(
+                height: 16,
+              ),
+              Text(
+                  _recipe.description),
+            ]),
           ),
-          SizedBox(
-            height: 16,
-          ),
-          Text(_recipe.title,
-              style: Theme.of(context).textTheme.headline6),
-          SizedBox(
-            height: 16,
-          ),
-          Text(
-              _recipe.description),
-        ]),
-      ),
     ));
   }
 }
